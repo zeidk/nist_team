@@ -26,8 +26,8 @@
           $(arg gui_args)
           $(arg load_moveit_args)
           $(arg fill_demo_shipment_args)
-          -f $(find ariac2021_solution)/config/sample_kitting_test.yaml
-          $(find ariac2021_solution)/config/nist_team_sensor_config.yaml
+          -f $(find ariac2021_solution)/config/sample_kitting.yaml
+          $(find ariac2021_solution)/config/team_config.yaml
           " required="true" output="screen" />
 
  <!-- <group ns='ariac/gantry'>
