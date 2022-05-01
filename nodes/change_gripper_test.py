@@ -119,7 +119,7 @@ class GantryGripperTest():
         self.bin_height = bin_height
 
     def goto_preset_location(self, location_name, robot_type):
-        rospy.loginfo(">>>> Going to preset location")
+        rospy.loginfo(">>>> Going to preset location {}".format(location_name))
         group = None
         if robot_type == 'kitting_robot':
             group = self.groups['kitting_arm']
@@ -154,7 +154,7 @@ class GantryGripperTest():
         Args:
             gripper_type: Gripper to attach to the gantry arm
         """
-        rospy.loginfo(">>>> Changin gripper")
+        rospy.loginfo(">>>> Attaching gripper: {}".format(gripper_type))
         group = self.groups['gantry_torso']
         gm = GripperManager(ns='/ariac/gantry/arm/gripper/')
         self.goto_preset_location('gripper_station', 'gantry_robot')
