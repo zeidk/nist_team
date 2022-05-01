@@ -6,8 +6,8 @@ from std_msgs.msg import String
 import yaml
 import os
 import sys
-from nist_gear.gripper_manager import GripperManager
-from nist_gear.competitor import Competitor
+from nist_team.gripper_manager import GripperManager
+from nist_team.competitor import Competitor
 
 
 def get_gantry_gripper():
