@@ -7,8 +7,8 @@ import tf2_ros
 import numpy as np
 from geometry_msgs.msg import PoseStamped, Vector3, Quaternion
 from sensor_msgs.msg import Image
-from test_competitor.msg import Part
-from test_competitor.srv._DetectObjects import DetectObjects, DetectObjectsResponse, DetectObjectsRequest
+from nist_team.msg import Part
+from nist_team.srv._DetectObjects import DetectObjects, DetectObjectsResponse, DetectObjectsRequest
 from cv_bridge import CvBridge, CvBridgeError 
 
 class ObjectDetector:

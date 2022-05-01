@@ -19,8 +19,8 @@ from std_msgs.msg import String
 from tf.transformations import quaternion_multiply, quaternion_from_euler
 # moveit
 import moveit_commander as mc
-from test_competitor.gripper_manager import GripperManager
-from test_competitor.competitor import Competitor
+from nist_team.gripper_manager import GripperManager
+from nist_team.competitor import Competitor
 # python
 import sys
 import copy

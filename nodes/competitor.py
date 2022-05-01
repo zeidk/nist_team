@@ -3,8 +3,8 @@
 import rospy
 import cv2
 import tf2_ros
-from test_competitor.srv import MoveGantry, MoveGantryRequest
-from test_competitor.srv import DetectObjects, DetectObjectsRequest
+from nist_team.srv import MoveGantry, MoveGantryRequest
+from nist_team.srv import DetectObjects, DetectObjectsRequest
 from cv_bridge import CvBridge, CvBridgeError
 
 

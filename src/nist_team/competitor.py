@@ -3,7 +3,7 @@
 import rospy
 from std_srvs.srv import Trigger
 from nist_gear.msg import Orders
-from test_competitor.assembly_commander import AssemblyPart
+from nist_team.assembly_commander import AssemblyPart
 from nist_gear.srv import AssemblyStationSubmitShipment
 from nist_gear.srv import SubmitKittingShipment
 from nist_gear.srv import AssemblyStationSubmitShipmentRequest

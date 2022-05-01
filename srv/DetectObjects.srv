@@ -15,4 +15,4 @@ int8 location
 # Response
 bool success
 sensor_msgs/Image image
-test_competitor/Part[] parts
+nist_team/Part[] parts

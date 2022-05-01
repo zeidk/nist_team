@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 
 import rospy
-from test_competitor.assembly_commander import AssemblyCommander
-from test_competitor.competitor import Competitor
+from nist_team.assembly_commander import AssemblyCommander
+from nist_team.competitor import Competitor
 
 # This code works with the trial configurations:
 # assembly_as1.yaml
@@ -27,7 +27,7 @@ if __name__ == "__main__":
         rospy.loginfo("Number of shipment to complete: {0}".format(
             len(order.assembly_shipments)))
         for assembly_shipment in order.assembly_shipments:
-            
+
             parts = competitor.process_assembly_shipment(assembly_shipment)
 
             briefcase = 'briefcase_' + assembly_shipment.station_id[-1]
@@ -62,7 +62,7 @@ if __name__ == "__main__":
                     commander.move_arm_to_home_position()
                     rospy.logerr("Dropping part..")
                     commander.gripper_off()
-                    
+
             rospy.loginfo("Shipment Completed")
             commander.move_arm_to_home_position()
 
